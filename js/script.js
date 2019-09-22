@@ -8,7 +8,16 @@ function fetchInputs(){
   month=document.getElementById(monthID);
   year=document.getElementById(yearID);
   century=document.getElementById(centuryID);
+  validate();
 }
+function validate(){
+  if (day <= 0) {
+    alert("please enter valid day")
+  }
+  else if (month <= 0) {
+    alert("enter valid month");
+}
+
 console.log(day, month, year, century);
 function calculateDay(){
   fetchInput();
