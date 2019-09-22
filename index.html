@@ -1,34 +1,100 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <meta charset="UTF-8"
+ 
   <head>
+    <meta charset="UTF-8"
+    
     <title>Akan Name Calculator</title>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
 integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/nameAssign.js"></script>
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 offset-md-3">
-          <h1 class="">Akan name claculator</h1>
-          <form>
-            
-          </form>
-    
-          <div id="output"></div>
-  
-            <div class="card card-success mb-2">
-              <div class="card-block">
-                <h4>You Akan name is: </h4>
-                <div id="nameOutput"></div>
+    <section id="home" class="parallax-section">
+      <div class="gradient-overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 offset-md-3">
+              <h1>Akan name calculator</h1>
+              <p>
+                  Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. 
+                 This is a web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. 
+
+                 
+              </p>
+        
             </div>
           </div>
         </div>
+    </section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+            <form>
+                <div class="form-group">
+                  <label for="input day">day of birth(DD)</label>
+                  <input id="day" type="number" required min="0" max="31"
+                  class="form-control form-control-lg mb-3"
+                  placeholder="Enter Birth day....">
+            
+                  <div>
+                  <input id="btn1" value="Enter" type="button" name="Enter" color="black"  class="btn btn-danger offset-md-5 mb-1"/>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="input month">month(MM)</label>
+                    <input id="month" type="number" required min="0" max="12"
+                    class="form-control form-control-lg mb-3"
+                    placeholder="You were born in the xth month of the year...">
+            
+                    <div>
+                    <input id="btn1" value="Enter" type="button" name="Enter" color="black"  class="btn btn-danger offset-md-5 mb-1"/>
+                    </div>
+                </div>
+                  
+                <div class="form-group">
+                  <label for="input year">year of birth(YY)</label>
+                  <input id="year" type="number" required min="00" max="99"
+                  class="form-control form-control-lg mb-3"
+                  placeholder="which year were you born in?...">
+            
+                  <div>
+                  <input id="btn1" value="Enter" type="button" name="Enter" color="black"  class="btn btn-danger offset-md-5 mb-1"/>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="input century">century of birth(CC)</label>
+                  <input id="century" type="number" required min="19" max="20"
+                  class="form-control form-control-lg mb-3"
+                  placeholder="Enter Century of birth...">
+            
+                  <div>
+                  <input id="btn1" value="Enter" type="button" name="Enter" color="black"  class="btn btn-danger offset-md-5 mb-1"/>
+                  </div>
+                </div>
+                <div class="button .button-group">
+                    <input type="radio" name="gender" id="gender value="male" checked>male<br>
+                    <input type="radio" name="gender" id="gender value="female">female<br>
+                </div>
+            
+              </form>
+            </br></br>
+              <div id="output"></div>
+                  
+                <div class="card card-info mb-2">
+                  <div class="card-block">
+                    <h4>Your Akan name is: </h4>
+                    <div id="nameOutput"></div>
+                </div>
+              </div>
+
+
+        </div>
       </div>
     </div>
-
+    
 
   </body>
 </html>
