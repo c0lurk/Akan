@@ -35,7 +35,7 @@ integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwE
             <form>
                 <div class="form-group">
                   <label for="input day">day of birth(DD)</label>
-                  <input id="day" type="number" required min="0" max="31"
+                  <input id="dayID" type="number" required min="0" max="31"
                   class="form-control form-control-lg mb-3"
                   placeholder="Enter Birth day....">
             
@@ -45,7 +45,7 @@ integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwE
                 </div>
                 <div class="form-group">
                   <label for="input month">month(MM)</label>
-                    <input id="month" type="number" required min="0" max="12"
+                    <input id="monthID" type="number" required min="0" max="12"
                     class="form-control form-control-lg mb-3"
                     placeholder="You were born in the xth month of the year...">
             
@@ -56,7 +56,7 @@ integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwE
                   
                 <div class="form-group">
                   <label for="input year">year of birth(YY)</label>
-                  <input id="year" type="number" required min="00" max="99"
+                  <input id="yearID" type="number" required min="00" max="99"
                   class="form-control form-control-lg mb-3"
                   placeholder="which year were you born in?...">
             
@@ -66,7 +66,7 @@ integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwE
                 </div>
                 <div class="form-group">
                   <label for="input century">century of birth(CC)</label>
-                  <input id="century" type="number" required min="19" max="20"
+                  <input id="centuryID" type="number" required min="19" max="20"
                   class="form-control form-control-lg mb-3"
                   placeholder="Enter Century of birth...">
             
@@ -81,11 +81,11 @@ integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwE
             
               </form>
             </br></br>
-              <div id="output"></div>
+              <div id="output-box"></div>
                   
                 <div class="card card-info mb-2">
                   <div class="card-block">
-                    <h4>Your Akan name is: </h4>
+                    <h4 id="output">Your Akan name is: </h4>
                     <div id="nameOutput"></div>
                 </div>
               </div>
