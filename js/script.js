@@ -1,4 +1,4 @@
-let day, month, year, century, DayOfTheWeek, gender, male, male ,result;
+let day, month, year, century, DayOfTheWeek, gender, male, female ,result;
 let daysOfWeek = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
 let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 let FemaleNames=["Akosua, Adwoa, Abenaa, Akua, Yaa, Afua, Ama"];
@@ -9,7 +9,8 @@ function fetchInputs(){
   year=document.getElementById(yearID);
   century=document.getElementById(centuryID);
 }
-function calculateDay{
+console.log(day, month, year, century);
+function calculateDay(){
   fetchInput();
   DayOfTheWeek= ( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day )% 7
   return(math.floor(DayOfTheWeek));
@@ -79,4 +80,7 @@ function checkGender(){
           text="invalid inputs"
     }
 }
-
+console.log(result);
+function printResult(){
+  document.getElementById("nameOutput").innerHTML=result;
+}
