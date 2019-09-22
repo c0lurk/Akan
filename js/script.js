@@ -1,6 +1,7 @@
-let day, month, year, century, DayOfTheWeek, gender, male, male;
+let day, month, year, century, DayOfTheWeek, gender, male, male ,result;
 let daysOfWeek = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
 let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+let FemaleNames=["Akosua, Adwoa, Abenaa, Akua, Yaa, Afua, Ama"];
 
 function fetchInputs(){
   day=document.getElementById(dayID);
@@ -24,25 +25,25 @@ function checkGender(){
         case gender = "male":
               switch(day){
                 case (0 || -0):
-                  document.getElementById("nameOutput").innerHTML = "The day is on a sunday." + "  " + "Your akan name is " + maleNames[0];
+                  result =  "Your akan name is " + maleNames[0];
                 break;
                 case (1 || -1):
-                  document.getElementById("nameOutput").innerHTML = "The day is on a monday." + " " + "Your akan name is " + maleNames[1];
+                  result = "Your akan name is " + maleNames[1];
                 break;
                 case (2 || -2):
-                  document.getElementById("nameOutput").innerHTML = "The day is on a tuesday." + " " + "Your akan name is " + maleNames[2];
+                  result =  "Your akan name is " + maleNames[2];
                 break;
                 case (3 || -3):
-                  document.getElementById("nameOutput").innerHTML = "The day is on a wednesday." + " " + "Your akan name is "+ maleNames[3];
+                  result =  + "Your akan name is "+ maleNames[3];
                 break;
                 case (4 || -4):
-                  document.getElementById("nameOutput").innerHTML = "The day is on a thursday." + " " + "Your akan name is " + maleNames[4];
+                  result = + "Your akan name is " + maleNames[4];
                 break;
                 case (5 || -5):
-                  document.getElementById("nameOutput").innerHTML = "The day is on a friday." + " " + "Your akan name is " + maleNames[5];
+                  result = "Your akan name is " + maleNames[5];
                 break;
                 case (6 || -6):
-                  document.getElementById("nameOutput").innerHTML = "The day is on a saturday." + " " + "Your akan name is " + maleNames[6];
+                  result = + "Your akan name is " + maleNames[6];
                 break;
                 default:
               }
@@ -50,25 +51,26 @@ function checkGender(){
         case gender = "female":
                 switch(day){
                   case 0 || -0:
-                    document.getElementById("nameOutput").innerHTML = "The day is on a sunday." + "  " + "Your akan name is  akosua";
+                    result =  "Your akan name is " + FemaleNames[0];
                   break;
                   case 1 || -1:
-                    document.getElementById("nameOutput").innerHTML = "The day is on a monday." + " " + "Your akan name is adwoa ";
+                    result = "Your akan name is adwoa " + FemaleNames[1];
                   break;
                   case 2 || -2:
-                    document.getElementById("nameOutput").innerHTML = "The day is on a tuesday." + " " + "Your akan name is abenaa";
+                    result =  "Your akan name is"; +FemaleNames[2]
                   break;
                   case 3 || -3:
-                    document.getElementById("nameOutput").innerHTML = "The day is on a wednesday." + " " + "Your akan name is akua";
+                    result =  + "Your akan name is";+FemaleNames[3]
                   break;
                   case 4 || -4:
-                    document.getElementById("nameOutput").innerHTML = "The day is on a thursday." + " " + "Your akan name is yaa";
+                    result = + "Your akan name is" +FemaleNames[4];
+
                   break;
                   case 5 || -5:
-                    document.getElementById("nameOutput").innerHTML = "The day is on a friday." + " " + "Your akan name is afua";
+                    result = "Your akan name is" +FemaleNames[5];
                   break;
                   case 6 || -6:
-                    document.getElementById("nameOutput").innerHTML = "The day is on a saturday." + " " + "Your akan name is ama";
+                    result = + "Your akan name is" +FemaleNames[6];
                   break;
 
               }
