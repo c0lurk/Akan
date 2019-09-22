@@ -1,22 +1,16 @@
-var day, month, year, century, DayOfTheWeek, gender, male, male;
+let day, month, year, century, DayOfTheWeek, gender, male, male;
 let daysOfWeek = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
 let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 
-function fetchInput(){
+function fetchInputs(){
   day=document.getElementById(dayID);
   month=document.getElementById(monthID);
   year=document.getElementById(yearID);
   century=document.getElementById(centuryID);
-
-  if(day<=0||>31){
-  alert("please enter valid date")
-  }else if(month<1||>12){
-    alert(please enter a valid month)
-  }
 }
-function DayOfTheWeek{
+function calculateDay{
   fetchInput();
-  DayOfTheWeek= ( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ) mod 7
+  DayOfTheWeek= ( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day )% 7
   return(math.floor(DayOfTheWeek));
 }
 function checkGender(){
@@ -79,6 +73,8 @@ function checkGender(){
 
               }
         break
+        default:
+          text="invalid inputs"
     }
 }
 
