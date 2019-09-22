@@ -16,6 +16,7 @@ function validate(){
   }
   else if (month <= 0) {
     alert("enter valid month");
+  }
 }
 
 console.log(day, month, year, century);
