@@ -14,6 +14,21 @@ This is a web application that takes a user's birthday and calculates the day of
 * Enter your birth century(CC)
 * Click the calculate button
 
+## BDD
+| Inputs |  Description |
+| :---         |          ---: |
+| Century   | The century that the user was born in(CC)|
+| Year     | The year of the century (YY)  |
+| Month     | The month of the year (MM) |
+| Date     |  The day of the month (DD) |
+
+
+| Outputs |  Description |
+| :---         |          ---: |
+| Akan name    |  The corresponding Akan name for the user ``eg Kofi``    |
+|     |      |
+
+
 ## Known Bugs
 The app does not take in user input as expected
 ## Technologies Used
