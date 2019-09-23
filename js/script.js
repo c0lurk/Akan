@@ -11,10 +11,10 @@ function fetchInputs(){
   validate();
 }
 function validate(){
-  if (day <= 0) {
+  if (day <= 0 || > 31) {
     alert("please enter valid day")
   }
-  else if (month <= 0) {
+  else if (month <= 0 >12) {
     alert("enter valid month");
   }
 }
