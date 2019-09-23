@@ -89,7 +89,6 @@ function checkGender(){
           text="invalid inputs"
     }
 }
-console.log(result);
 function printResult(){
   document.getElementById("nameOutput").innerHTML=result;
 }
