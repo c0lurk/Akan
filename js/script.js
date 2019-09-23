@@ -4,10 +4,10 @@ let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 let FemaleNames=["Akosua, Adwoa, Abenaa, Akua, Yaa, Afua, Ama"];
 
 function fetchInputs(){
-  day=document.getElementById(dayID);
-  month=document.getElementById(monthID);
-  year=document.getElementById(yearID);
-  century=document.getElementById(centuryID);
+  day=parseInt(document.getElementById(dayID).value));
+  month=parseInt(document.getElementById(monthID).value));
+  year=parseInt(document.getElementById(yearID).value));
+  century=parseInt(document.getElementById(centuryID);
   validate();
 }
 function validate(){
