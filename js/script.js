@@ -26,9 +26,9 @@ function calculateDay(){
 }
 function checkGender(){
   gender = document.getElementsByName("genderID");
-  if(gender[0].checked == true){
+  if(gender[0].checked === true){
     male = "male";
-  }else if(gender[1].checked == true){
+  }else if(gender[1].checked === true){
     female = "female";
   }
     switch(gender){
