@@ -21,8 +21,8 @@ HTML
 CSS
 JS
 ## Support and contact details
-YOu can reach out to me via e-mail on zachnjuguna@gmail.com
+You can reach out to me via e-mail on zachnjuguna@gmail.com
 ### License
 *MIT*
-Copyright (c) 2019 **Zach Njuguna**
+Copyright (c) git 2019 **Zach Njuguna**
   
