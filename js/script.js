@@ -1,4 +1,4 @@
-let day, month, year, century, DayOfTheWeek, gender, male, female ,result;
+let day, month, year, century, dayOfTheWeek, gender, male, female ,result;
 let daysOfWeek = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
 let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 let FemaleNames=["Akosua, Adwoa, Abenaa, Akua, Yaa, Afua, Ama"];
@@ -9,21 +9,26 @@ function fetchInputs(){
   year=parseInt(document.getElementById(yearID).value);
   century=parseInt(document.getElementById(centuryID).value);
   validate();
+  console.log(day, month, year, century);
 }
 function validate(){
-  if (day <= 0 || > 31) {
+  if (day <= 0 ) {
     alert("please enter valid day")
-  }
-  else if (month <= 0 >12) {
+  }else if (month <= 0) {
     alert("enter valid month");
   }
 }
 
 function calculateDay(){
   fetchInput();
-  DayOfTheWeek= ( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day )% 7
-  return(math.floor(DayOfTheWeek));
+  dayOfTheWeek= ( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ) % 7;
+  return(math.floor(dayOfTheWeek));
 }
+function checkDayOfWeek(){
+  day = calculateDay();
+   checkGender();
+}
+console.log(day);
 function checkGender(){
   gender = document.getElementsByName("genderID");
   if(gender[0].checked === true){
